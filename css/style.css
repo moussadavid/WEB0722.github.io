@@ -1,0 +1,22 @@
+body{
+    background-color: burlywood;
+}
+
+.boldWord{
+    font-weight:bold ;
+}
+
+h1{
+    color: aqua;
+}
+h4{
+    color: aqua;
+}
+.numericstyle{
+    list-style-type: decimal;
+}
+a:visited { color: #FF0000; }
+
+a:hover { color: #FF00FF; }
+
+a:active { color: #0000FF; }
