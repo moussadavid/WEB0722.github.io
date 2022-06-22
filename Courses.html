@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <style>
+            .inutText{
+                width: 30px;
+            }
+
+            .alignright{
+                text-align: right;
+            }
+            #btnOrder
+            {
+                position:absolute;
+                right:100px;
+                margin-top: 10px;
+            }
+            #header
+            {
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            #btnLogout
+            {
+                margin-top:25px ;
+                margin-right: 25px;
+            }
+        </style>
+</head>
+
+<body>
+    <div id="header">
+        <img src="./Public/assets/images/logo.jpg" alt="">
+        <div >
+            <h2>Welcome, David</h2>
+    </div>
+    <div id="btnLogout">
+        <input type="button" value="Logout"/>
+    </div>
+    </div>
+    <h4>
+        Product List 
+    </h4>
+    <div class="container">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Stock</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Node.js</td>
+                <td>9.99</td>
+                <td>8</td>
+                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                  </svg></td>
+              </tr>
+              <tr>
+                <td >React</td>
+                <td>19.99</td>
+                <td>5</td>
+                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                  </svg></td>
+              </tr>
+              <tr>
+                <td>Angular</td>
+                <td>29.9</td>
+                <td>13</td>
+                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                  </svg></td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+
+    <h4>
+Your Shopping Cart    </h4>
+    <div class="container">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Total</th>
+                <th scope="col">Quantity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Node.js</td>
+                <td>9.99</td>
+                <td>9.99</td>
+                <td>
+                    -
+                    <input type="text" class="inutText" value="1">
+                    +
+                </td>
+              </tr>
+              <tr>
+                <td>Angular</td>
+                <td>29.9</td>
+                <td>299.9</td>
+                <td> -
+                    <input type="text"  class="inutText" value="10"/>
+                    +</td>
+              </tr>
+              <tr>
+                <td colspan="4" class="alignright">Total:309.89</td>
+                </tr>
+            </tbody>
+          </table>
+    </div>
+    
+        <input type="button" id="btnOrder"  value="Place Order"/>
+    
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fmoussadavid.github.io%2FWEB0722.github.io%2Faboutme.html" target="_blank">
+            <img src="./Public/assets/images/checker.png" alt="HTML checker"/>
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmoussadavid.github.io%2FWEB0722.github.io%2Faboutme.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
+            <img src="./Public/assets/images/css_checker.png" alt="CSS checker" />
+        </a>
+        <a href="index.html">
+            <img src="./Public/assets/images/home.png" alt="checker"/>
+        </a>        
+</body>
+
+</html>
