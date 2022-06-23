@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Registration</title>
+    <style>
+        div {
+            
+            background-color: aquamarine;
+            height: 50px;
+            
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+        tr {
+            height: 40px;
+        }
+
+        td {
+            vertical-align: top;
+        }
+
+        .submitAction {
+            text-align: center;
+            background-color: antiquewhite;
+            vertical-align: middle;
+        }
+        .required{
+            color: red;
+        }
+        .underLine
+        {
+            text-decoration:underline ;
+        }
+        .bold
+        {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span>Workshop Registration</span>
+        <select>
+            <option>More Action</option>
+            <option>Action1</option>
+            <option>Action2</option>
+
+        </select>
+    </div>
+    <form>
+        <table style="width:100% ;">
+            <tr>
+                <td colspan="4">
+                    <label class="underLine">Rigister now while seats are avalablel!</label>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <label class="bold">FirstName <span class="required">*</span></label>
+                </td>
+                <td>
+                    <input name="FirstName" required placeholder="FirstName">
+                </td>
+                <td colspan="2">
+                    <label class="underLine">Lunch</label>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <label class="bold">LastName <span class="required">*</span></label>
+
+                </td>
+                <td>
+                    <input name="LastName" required placeholder="LastName">
+                </td>
+                <td>
+                    <label class="bold">Meal Preference</label>
+
+                </td>
+                <td>
+                    <select>
+                        <option>Standard</option>
+                        <option>Pescetarian</option>
+                        <option>Vegetarian</option>
+                        <option>Vegan</option>
+
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="bold">Company/Institution<span class="required">*</span></label>
+
+                </td>
+                <td>
+                    <input name="Company" required placeholder="Company/Institution">
+                </td>
+                <td>
+                    <label class="underLine">Payment Details</Details></label>
+
+                </td>
+                <td>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="bold">Addree <span class="required">*</span></label>
+                </td>
+                <td>
+                    <textarea rows="5" cols="" name="Addree" required placeholder="Addree"></textarea>
+
+                </td>
+                <td>
+                    <label class="bold">Payment Mode</label>
+
+                </td>
+                <td>
+                    <input type="checkbox" name="Cash" />Cash<br />
+                    <input type="checkbox" name="Cheque" />Cheque<br />
+                    <input type="checkbox" name="Demand Draft" />Demand Draft
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="bold">City</label>
+
+                </td>
+                <td>
+                    <input name="City" required placeholder="City">
+                </td>
+                <td>
+                    <label class="bold">DD/Cheque No.</label>
+
+                </td>
+                <td>
+                    <input name="Cheque" required placeholder="DD/Cheque No.">
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="bold">State/Provice/Region</label>
+
+                </td>
+                <td>
+
+                    <select>
+                        <option>Virgina</option>
+                        <option>Iowa</option>
+                        <option>DC</option>
+                    </select>
+                </td>
+                <td>
+                    <label class="bold">Drawn on(Bank Name)</label>
+
+                </td>
+                <td>
+                    <input name="Bank" required placeholder="Drawn on(Bank Name)">
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="bold">Country</label>
+
+                </td>
+                <td>
+
+                    <select>
+                        <option>USA</option>
+                        <option>Egypt</option>
+                        <option>UAE</option>
+                        <option>China</option>
+
+                    </select>
+                </td>
+                <td>
+                    <label class="bold">Payable at</label>
+
+                </td>
+                <td>
+                    <input name="Payable" required placeholder="Payable at">
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="bold">Email <span class="required">*</span></label>
+
+                </td>
+                <td>
+                    <input name="City" required placeholder="City">
+
+                </td>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="bold">phone Number <span class="required">*</span></label>
+
+                </td>
+                <td>
+                    <input name="City" required placeholder="City">
+
+                </td>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" class="submitAction">
+                    <input type="submit" />
+                    <input type="reset" />
+                </td>
+            </tr>
+        </table>
+        
+    </form>
+    
+    <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fmoussadavid.github.io%2FWEB0722.github.io%2FCourses.html" target="_blank">
+        <img src="./Public/assets/images/checker.png" alt="HTML checker"/>
+    </a>
+    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmoussadavid.github.io%2FWEB0722.github.io%2FCourses.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
+        <img src="./Public/assets/images/css_checker.png" alt="CSS checker" />
+    </a>
+    <a href="index.html">
+        <img src="./Public/assets/images/home.png" alt="checker"/>
+    </a>       
+</body>
+
+</html>
